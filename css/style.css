@@ -38,7 +38,13 @@ body {
     0 0 50px #7FC1E3,
     0 0 100px #7FC1E3;
     animation: animate 15s linear infinite;
+    -webkit-animation: animate 15s linear infinite;
+    -moz-animation: animate 15s linear infinite;
+    -o-animation: animate 15s linear infinite;
     animation-duration: calc(200s / var(--i));
+    -webkit-animation-duration: calc(200s / var(--i));
+    -moz-animation-duration: calc(200s / var(--i));
+    -o-animation-duration: calc(200s / var(--i));
 }
 
 .bubbles span:nth-child(even) {
@@ -47,7 +53,13 @@ body {
     0 0 50px #CCA8DD,
     0 0 100px #CCA8DD;
     animation: animate 15s linear infinite;
+    -webkit-animation: animate 15s linear infinite;
+    -moz-animation: animate 15s linear infinite;
+    -o-animation: animate 15s linear infinite;
     animation-duration: calc(200s / var(--i));
+    -webkit-animation-duration: calc(200s / var(--i));
+    -moz-animation-duration: calc(200s / var(--i));
+    -o-animation-duration: calc(200s / var(--i));
 }
 
 @keyframes animate {
@@ -58,6 +70,33 @@ body {
         transform: translateY(-100%) scale(1);
     }
 }
+
+@-webkit-keyframes animate {
+    0% {
+        transform: translateY(250vh) scale(0);
+    }
+    100% {
+        transform: translateY(-100%) scale(1);
+    }
+ }
+ 
+ @-moz-keyframes animate {
+    0% {
+        transform: translateY(250vh) scale(0);
+    }
+    100% {
+        transform: translateY(-100%) scale(1);
+    }
+ }
+ 
+ @-o-keyframes animate {
+    0% {
+        transform: translateY(250vh) scale(0);
+    }
+    100% {
+        transform: translateY(-100%) scale(1);
+    }
+ }
 
 .glass h1 {
     color: white;
