@@ -59,6 +59,10 @@ body {
     }
 }
 
+.glass h1 {
+    color: white;
+    margin-bottom: 2%;
+}
 
 .glass {
     margin: 2% 10% 2% 10%;
@@ -74,9 +78,10 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: -15px 17px 17px 0 rgba(10, 10, 10, 0.25);
     flex-direction: column;
+    text-align: center;
 }
 
 .glass p {
     color: white;
-    margin: 5%;
+    margin-bottom: 2%;
 }
