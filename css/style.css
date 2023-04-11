@@ -39,12 +39,8 @@ body {
     0 0 100px #7FC1E3;
     animation: animate 15s linear infinite;
     -webkit-animation: animate 15s linear infinite;
-    -moz-animation: animate 15s linear infinite;
-    -o-animation: animate 15s linear infinite;
     animation-duration: calc(200s / var(--i));
     -webkit-animation-duration: calc(200s / var(--i));
-    -moz-animation-duration: calc(200s / var(--i));
-    -o-animation-duration: calc(200s / var(--i));
 }
 
 .bubbles span:nth-child(even) {
@@ -54,12 +50,9 @@ body {
     0 0 100px #CCA8DD;
     animation: animate 15s linear infinite;
     -webkit-animation: animate 15s linear infinite;
-    -moz-animation: animate 15s linear infinite;
-    -o-animation: animate 15s linear infinite;
     animation-duration: calc(200s / var(--i));
     -webkit-animation-duration: calc(200s / var(--i));
-    -moz-animation-duration: calc(200s / var(--i));
-    -o-animation-duration: calc(200s / var(--i));
+
 }
 
 @keyframes animate {
@@ -80,23 +73,6 @@ body {
     }
  }
  
- @-moz-keyframes animate {
-    0% {
-        -moz-transform: translateY(250vh) scale(0);
-    }
-    100% {
-        -moz-transform: translateY(-100%) scale(1);
-    }
- }
- 
- @-o-keyframes animate {
-    0% {
-        -o-transform: translateY(250vh) scale(0);
-    }
-    100% {
-        -o-transform: translateY(-100%) scale(1);
-    }
- }
 
 .glass h1 {
     color: white;
@@ -106,8 +82,7 @@ body {
 .glass {
     margin: 2% 10% 2% 10%;
     justify-content: center;
-    align-items: center;
-    padding: 5% 10% 5% 10%;
+    padding: 5% 2% 5% 2%;
     background: rgba(255, 255, 255, 0.1);
     z-index:10;
     display:flex;
@@ -121,6 +96,24 @@ body {
 }
 
 .glass p {
-    color: white;
     margin-bottom: 2%;
+}
+
+.main-text{
+    color: white;
+}
+
+.second-text {
+    color: #838383;
+}
+
+.title {
+    color:white;
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    html{
+       font-size:90%%;
+    }
 }
