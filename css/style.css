@@ -54,6 +54,39 @@ body {
     -webkit-animation-duration: calc(200s / var(--i));
 
 }
+.add-bubbles {
+    position: relative;
+    display: flex;
+    z-index: -100;
+}
+
+.add-bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #7FC1E3;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #7FC1E344,
+    0 0 50px #7FC1E3,
+    0 0 100px #7FC1E3;
+    animation: animate 15s linear infinite;
+    -webkit-animation: animate 15s linear infinite;
+    animation-duration: calc(200s / var(--i));
+    -webkit-animation-duration: calc(200s / var(--i));
+}
+
+.add-bubbles span:nth-child(even) {
+    background: #CCA8DD;
+    box-shadow: 0 0 0 10px #CCA8DD44,
+    0 0 50px #CCA8DD,
+    0 0 100px #CCA8DD;
+    animation: animate 15s linear infinite;
+    -webkit-animation: animate 15s linear infinite;
+    animation-duration: calc(200s / var(--i));
+    -webkit-animation-duration: calc(200s / var(--i));
+
+}
 
 @keyframes animate {
     0% {
@@ -115,5 +148,25 @@ body {
 @media (max-width: 1200px) {
     html{
        font-size:90%%;
+    }
+    .bubbles span {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        background: #7FC1E3;
+        margin: 0 4px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px #7FC1E344,
+        0 0 25px #7FC1E3,
+        0 0 50px #7FC1E3;
+    }
+    .bubbles span:nth-child(even) {
+        background: #CCA8DD;
+        box-shadow: 0 0 0 5px #CCA8DD44,
+        0 0 25px #CCA8DD,
+        0 0 50px #CCA8DD;
+    }
+    .add-bubbles{
+        display:none;
     }
 }
